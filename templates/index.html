@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul style="list-style: none; text-align:center">
+                    {% for message in messages %}
+                        <li style="color: green;">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <h1 style="text-align: center">Welcome to my Portfolio</h1>
+        <p>Hello, I'm Ananya, a curious student in the tech field eager to learn and apply my knowledge for real world problems.</p>
+        <a href="/contact">Contact Me</a>
+    </body>
+</html>
